@@ -1,8 +1,9 @@
 # SmartDiskII
 
-This is a (probably very) naïve attempt to clone the Apple "Liron" disk 
-controller by simply replacing the IWM chip with the discrete components from 
-the Disk II controller that the IWM was originally based on.
+This is an attempt to clone the Apple "Liron" disk controller by replacing 
+the IWM chip with the discrete components from the Disk II controller that 
+the IWM was originally based on, and using firmware that has been
+appropriately modified to use that hardware.
 
 This is a work in progress and not yet a functioning design.
 
