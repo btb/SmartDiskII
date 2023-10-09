@@ -1,11 +1,15 @@
 # SmartDiskII
 
-This is an attempt to clone the Apple "Liron" disk controller by replacing 
-the IWM chip with the discrete components from the Disk II controller that 
+This is basically an Apple "Liron" disk controller with the IWM chip
+replaced by the discrete components from the Disk II controller, which
 the IWM was originally based on, and using firmware that has been
-appropriately modified to use that hardware.
+appropriately modified to use those components.
 
-This is a work in progress and not yet a functioning design.
+This card works as a self-contained SmartPort interface when loaded with
+firmware for KBOOHK's "SoftSP" card.
+
+This experimental branch uses a larger ROM image, and latches to select
+firmware specific to the slot the card is placed in.
 
 ## Configuration
 
