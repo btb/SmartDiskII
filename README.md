@@ -29,4 +29,4 @@ jumper JP8 to force the card into Disk II mode.
 
 **Warning: A FloppyEMU in SmartPort mode (or, to be safe, any other SmartPort device)
 should never be plugged in if the J8 jumper is in place.** A future revision will
-add a resistor to mitigate this danger as well.
+add a resistor or diode to mitigate this danger as well.
