@@ -5,6 +5,10 @@ replaced by the discrete components from the Disk II controller, which
 the IWM was originally based on, and using firmware (i.e. SoftSP) which
 has been appropriately modified to use those components instead of the IWM.
 
+![image info](SmartDiskII.png)
+
+[Interactive BOM](https://btb.github.io/SmartDiskII/bom/SmartDiskII_rev3.html)
+
 ## SmartPort Operation
 
 Because the SoftSP firmware (as of v6) is slot-dependent, a different copy is
