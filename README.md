@@ -26,3 +26,7 @@ region of the EPROM is filled with the Disk II boot rom. Plugging a
 floppy drive into the DRV1 connector should automatically activate the correct
 firmware because of the presence of +5V on pin 12, but you can also close
 jumper JP8 to force the card into Disk II mode.
+
+**Warning: A FloppyEMU in SmartPort mode (or, to be safe, any other SmartPort device)
+should never be plugged in if the J8 jumper is in place.** A future revision will
+add a resistor to mitigate this danger as well.
