@@ -17,8 +17,6 @@ region of the EPROM, slot 2 version is at 2xxx, etc.
 A set of latches (U9) is used to automatically select the appropriate region
 depending on which slot the SmartDiskII is placed in.
 
-SmartPort devices can only be installed on connector DRV1.
-
 ## Disk II Operation
 
 The card also works as a regular Disk II controller. For this, the 0xxx
