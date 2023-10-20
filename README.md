@@ -5,6 +5,10 @@ replaced by the discrete components from the Disk II controller, which
 the IWM was originally based on, and using firmware (i.e. SoftSP) which
 has been appropriately modified to use those components instead of the IWM.
 
+![image info](SmartDiskII.png)
+
+[Interactive BOM](https://btb.github.io/SmartDiskII/bom/SmartDiskII_rev3.html)
+
 ## SmartPort Operation
 
 Because the SoftSP firmware (as of v6) is slot-dependent, a different copy is
@@ -22,3 +26,7 @@ region of the EPROM is filled with the Disk II boot rom. Plugging a
 floppy drive into the DRV1 connector should automatically activate the correct
 firmware because of the presence of +5V on pin 12, but you can also close
 jumper JP8 to force the card into Disk II mode.
+
+**Warning: A FloppyEMU in SmartPort mode, or any other SmartPort device,
+should never be plugged in if the J8 jumper is in place.** A future revision will
+add a resistor or diode to mitigate this danger as well.
