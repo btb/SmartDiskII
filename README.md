@@ -22,10 +22,10 @@ SmartPort devices can only be installed on connector DRV1.
 ## Disk II Operation
 
 The card also works as a regular Disk II controller. For this, the 0xxx
-region of the EPROM is filled with the Disk II boot rom. Plugging a
-floppy drive into the DRV1 connector should automatically activate the correct
-firmware because of the presence of +5V on pin 12, but you can also close
-jumper JP8 to force the card into Disk II mode.
+region of the EPROM is filled with the Disk II boot rom, and U9 is held in
+reset. Plugging a floppy drive into the DRV1 connector should automatically
+activate the correct firmware because of the presence of +5V on pin 12, but
+you can also close jumper JP8 to force the card into Disk II mode.
 
 **Warning: A FloppyEMU in SmartPort mode, or any other SmartPort device,
 should never be plugged in if the J8 jumper is in place.** A future revision will
