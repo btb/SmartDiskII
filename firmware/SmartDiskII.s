@@ -1,9 +1,9 @@
 
         .org    $0000
         .byte   "SmartPort firmware written by Michael Askins.", $0a
-		.byte   "SoftSP V6 conversion by MFA2 Labs. ", $0a
-		.byte   "SmartDiskII integration by Bradley Bell. ", $0a
-		.byte   "Inspiration from Adrian Black. ", $0a
+        .byte   "SoftSP V6 conversion by MFA2 Labs. ", $0a
+        .byte   "SmartDiskII integration by Bradley Bell. ", $0a
+        .byte   "Inspiration from Adrian Black. ", $0a
         .byte   $00
 
         .res    $0100-*,$ff
