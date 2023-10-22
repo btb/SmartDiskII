@@ -28,3 +28,9 @@ you can also close jumper JP8 to force the card into Disk II mode.
 **Warning: A FloppyEMU in SmartPort mode, or any other SmartPort device,
 should never be plugged in if the J8 jumper is in place.** A future revision will
 add a resistor or diode to mitigate this danger as well.
+
+## Configuration
+
+U8 is the standard [16-sector Disk II state machine data, P6](firmware/341-0128_P6A.bin), on a 2716-compatible EPROM.
+
+U11 is a special combination of the Disk II boot ROM and the SoftSP firmware, [SmartDiskII.bin](firmware/SmartDiskII.bin).
