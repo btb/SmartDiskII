@@ -30,3 +30,6 @@ fp-info-cache
 
 # Generated Gerber files
 gerbers_*
+
+# object files
+*.o
