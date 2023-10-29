@@ -7,7 +7,7 @@ has been appropriately modified to use those components instead of the IWM.
 
 ![image info](SmartDiskII.png)
 
-[Interactive BOM](https://btb.github.io/SmartDiskII/bom/SmartDiskII_rev3.html)
+[Interactive BOM](https://btb.github.io/SmartDiskII/bom/SmartDiskII.html)
 
 ## SmartPort Operation
 
@@ -20,14 +20,10 @@ depending on which slot the SmartDiskII is placed in.
 ## Disk II Operation
 
 The card also works as a regular Disk II controller. For this, the 0xxx
-region of the EPROM is filled with the Disk II boot rom, and U9 is held in
+region of the EPROM contains the Disk II boot rom, and U9 is held in
 reset. Plugging a floppy drive into the DRV1 connector should automatically
 activate the correct firmware because of the presence of +5V on pin 12, but
-you can also close jumper JP8 to force the card into Disk II mode.
-
-**Warning: A FloppyEMU in SmartPort mode, or any other SmartPort device,
-should never be plugged in if the J8 jumper is in place.** A future revision will
-add a resistor or diode to mitigate this danger as well.
+you can also close jumper JP8 to force the card into Disk II boot mode.
 
 ## Configuration
 
