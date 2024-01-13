@@ -17,12 +17,19 @@ region of the EPROM, slot 2 version is at 2xxx, etc.
 A set of latches (U9) is used to automatically select the appropriate region
 depending on which slot the SmartDiskII is placed in.
 
-## Disk II Operation
+## Disk II Operation (experimental)
 
-The card also works as a regular Disk II controller. For this, the 0xxx
-region of the EPROM contains the Disk II boot rom, and U9 is held in
+The card is designed to also work as a regular Disk II controller, though 
+results at this time are inconsistent to poor. For an unknown reason, it can 
+inappropriately begin writing to your floppy, causing data corruption. This 
+problem does not seem to occur if you use a 9334 at U5 (same as the chip at 
+C2 on Apple's original Disk II controller).
+
+5.25 Floppy operation works by having the Disk II boot rom in the 0xxx
+region of the EPROM, and therefore active while U9 is held in
 reset. Plugging a floppy drive into the DRV1 connector should automatically
 activate the correct firmware because of the presence of +5V on pin 12, but
+because some devices do not have that pin connected,
 you can also close jumper JP8 to force the card into Disk II boot mode.
 
 ## Configuration
