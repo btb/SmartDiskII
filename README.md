@@ -26,7 +26,7 @@ this system can lead to corrupted floppy disks.
 For this reason it is recommended to use true TTL ICs for all of the logic 
 chips. In addition, for the chip at U5, Apple's original Disk II 
 controller design called for a 9334 rather than a 74LS259. Indeed, using a 
-9334 does appear to make the circuit more tolerant of these timing issues.  
+9334 does appear to make the circuit more tolerant of these issues.  
 
 5.25 Floppy operation works by having the Disk II boot rom in the 0xxx
 region of the EPROM, and therefore active while U9 is held in
