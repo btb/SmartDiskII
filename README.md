@@ -20,10 +20,13 @@ depending on which slot the SmartDiskII is placed in.
 ## Disk II Operation (experimental)
 
 The card is designed to also work as a regular Disk II controller, though 
-results at this time are inconsistent to poor. For an unknown reason, it can 
-inappropriately begin writing to your floppy, causing data corruption. This 
-problem does not seem to occur if you use a 9334 at U5 (same as the chip at 
-C2 on Apple's original Disk II controller).
+results can be inconsistent depending on the components used. Failures of 
+this system can lead to corrupted floppy disks.
+
+For this reason it is recommended to use true TTL ICs for all of the logic 
+chips. In addition, for the chip at U5, Apple's original Disk II 
+controller design called for a 9334 rather than a 74LS259. Indeed, using a 
+9334 does appear to make the circuit more tolerant of these timing issues.  
 
 5.25 Floppy operation works by having the Disk II boot rom in the 0xxx
 region of the EPROM, and therefore active while U9 is held in
