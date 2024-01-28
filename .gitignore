@@ -29,7 +29,7 @@ fp-info-cache
 #*.csv
 
 # Generated Gerber files
-gerbers_*
+gerbers/*/
 
 # object files
 *.o
